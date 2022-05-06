@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Rectangle -->
+    <!-- Booking Details -->
+
+
+    <RelativeLayout
+        android:id="@+id/rectangle"
+        android:layout_width="363dp"
+        android:layout_height="495dp"
+        android:background="@drawable/rectangle_payment_detail"
+        android:elevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:id="@+id/booking_det"
+            android:layout_width="303dp"
+            android:layout_height="449dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/booking_details" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_gotoExplore"
+        android:layout_width="320dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/shape"
+        android:text="Go to Explore"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

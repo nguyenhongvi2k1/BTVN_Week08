@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- Title -->
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="365dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="6dp"
+            android:background="#00000000">
+
+            <View xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/close_filter"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/x"
+                android:clipToOutline="true" />
+            <!-- Filter -->
+            <TextView
+                android:id="@+id/filter"
+                android:layout_width="77dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="6dp"
+                android:text="Filter"
+                android:fontFamily="@font/poppinsbold"
+                android:textAppearance="@style/filter" />
+        </RelativeLayout>
+
+        <!-- Number of room -->
+        <RelativeLayout
+            android:id="@+id/number_of_room"
+            android:layout_width="354dp"
+            android:layout_height="97dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="81dp"
+            android:background="#00000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title">
+            <!-- Number of Room -->
+            <TextView
+                android:id="@+id/number_of_r"
+                android:layout_width="162dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="top"
+                android:text="Number of room"
+                android:textAppearance="@style/number_of_room"
+                android:textStyle="bold" />
+            <!-- Room Option -->
+            <RelativeLayout
+                android:id="@+id/room_option"
+                android:layout_width="354dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:background="#00000000">
+                <!-- 5 rooms -->
+                <TextView
+                    android:id="@+id/rooms"
+                    android:layout_width="65dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="top"
+                    android:text="5 rooms"
+                    android:textAppearance="@style/rooms" />
+                <!-- line -->
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="354dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/line" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!-- Price per night -->
+        <RelativeLayout
+            android:id="@+id/price_per_n"
+            android:layout_width="354dp"
+            android:layout_height="117dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="198dp"
+            android:background="#00000000">
+            <!-- Price per night -->
+            <TextView
+                android:id="@+id/tx_price_per_n"
+                android:layout_width="141dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="top"
+                android:text="Price per night"
+                android:textAppearance="@style/price_per_night"
+                android:textStyle="bold" />
+            <!-- Price Option -->
+            <RelativeLayout
+                android:id="@+id/price_optio"
+                android:layout_width="354dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:background="#00000000">
+                <!-- line -->
+                <View
+                    android:id="@+id/line_price"
+                    android:layout_width="354dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/line_price" />
+                <!-- $ 900 -->
+                <TextView
+                    android:id="@+id/some_id_900"
+                    android:layout_width="45dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="250dp"
+                    android:gravity="top"
+                    android:text="$ 900"
+                    android:textAppearance="@style/rooms" />
+                <!-- $ 310 -->
+                <TextView
+                    android:id="@+id/some_id_310"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="55dp"
+                    android:gravity="top"
+                    android:text="$ 310"
+                    android:textAppearance="@style/rooms" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <!-- Hotel Options -->
+        <RelativeLayout
+            android:id="@+id/hotel_optio"
+            android:layout_width="354dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="315dp"
+            android:background="#00000000">
+            <!-- Hotel Options -->
+            <TextView
+                android:id="@+id/hotel_option"
+                android:layout_width="131dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="top"
+                android:text="Hotel Options"
+                android:textAppearance="@style/hotel_option"
+                android:textStyle="bold" />
+            <!-- Choices -->
+            <RelativeLayout
+                android:id="@+id/choices"
+                android:layout_width="354dp"
+                android:layout_height="156dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:background="#00000000">
+
+                <RadioButton
+                    android:id="@+id/bathtub"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="#00000000"
+                    android:text="Bathtub"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/Pet_Friendly"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="28dp"
+                    android:background="#00000000"
+                    android:text="Pet Friendly"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/Pool"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="56dp"
+                    android:background="#00000000"
+                    android:text="Pool"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/Nonsmoking_room"
+                    android:layout_width="190dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="84dp"
+                    android:background="#00000000"
+                    android:text="Non-smoking room"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/Buffet"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:text="Buffet"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/Car_Park"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="28dp"
+                    android:background="#00000000"
+                    android:text="Car Park"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/Laundry_Service"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="56dp"
+                    android:background="#00000000"
+                    android:text="Laundry Service"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/People"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="84dp"
+                    android:background="#00000000"
+                    android:text="Facilities for Disabled People"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <!-- Number of Person -->
+        <RelativeLayout
+            android:id="@+id/number_of_p"
+            android:layout_width="354dp"
+            android:layout_height="117dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="490dp"
+            android:background="#00000000">
+            <!-- Number of Adult -->
+            <TextView
+                android:id="@+id/number_of_a"
+                android:layout_width="159dp"
+                android:layout_height="22dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="top"
+                android:text="Number of Adult"
+                android:textAppearance="@style/price_per_night"
+                android:textStyle="bold" />
+            <!-- 5 adults -->
+            <TextView
+                android:id="@+id/adults"
+                android:layout_width="64dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:gravity="top"
+                android:text="5 adults"
+                android:textAppearance="@style/rooms" />
+            <!-- Adult Option -->
+            <View
+                android:id="@+id/adult_optio"
+                android:layout_width="354dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/line" />
+        </RelativeLayout>
+        <!-- Checkin & Checkout Date -->
+        <RelativeLayout
+            android:id="@+id/checkin_che"
+            android:layout_width="354dp"
+            android:layout_height="160dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="619dp"
+            android:background="#00000000">
+            <!-- Check-in Date -->
+            <TextView
+                android:id="@+id/check_in_da"
+                android:layout_width="134dp"
+                android:layout_height="34dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="12sp"
+                android:text="Check-in Date"
+                android:textStyle="bold"
+                android:textAppearance="@style/price_per_night" />
+            <!-- Date Choice Buttons -->
+            <RelativeLayout
+                android:id="@+id/date_choice"
+                android:layout_width="322dp"
+                android:layout_height="42dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="50dp"
+                android:background="#00000000">
+
+                <View
+                    android:id="@+id/rectangle_4"
+                    android:layout_width="81dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/rectangle_today" />
+                <!-- Today -->
+                <TextView
+                    android:id="@+id/today"
+                    android:layout_width="45dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:lineSpacingExtra="7sp"
+                    android:text="Today"
+                    android:textAppearance="@style/rooms" />
+
+                <View
+                    android:id="@+id/rectangle_tomorrow"
+                    android:layout_width="110dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="108dp"
+                    android:background="@drawable/rectangle_today" />
+
+                <!-- Tomorrow -->
+                <TextView
+                    android:id="@+id/tomorrow"
+                    android:layout_width="81dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="124dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:lineSpacingExtra="7sp"
+                    android:text="Tomorrow"
+                    android:textAppearance="@style/rooms" />
+                <View
+                    android:id="@+id/rectangle_this_week"
+                    android:layout_width="81dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/rectangle_today" />
+                <!-- This week -->
+                <TextView
+                    android:id="@+id/this_week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="6dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:lineSpacingExtra="7sp"
+                    android:text="This week"
+                    android:textAppearance="@style/this_week" />
+            </RelativeLayout>
+            <!-- Choose from calendar -->
+            <RelativeLayout
+                android:id="@+id/choose_from"
+                android:layout_width="241dp"
+                android:layout_height="42dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/rectangle_today">
+                <!-- Vector 9 -->
+                <View
+                    android:id="@+id/vector_9"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_right"
+                    android:clipToOutline="true" />
+                <!-- Calendar -->
+                <View
+                    android:id="@+id/calendar"
+                    android:layout_width="21dp"
+                    android:layout_height="23.56dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/calendar" />
+                <!-- Choose from calendar -->
+                <TextView
+                    android:id="@+id/choose_from_date"
+                    android:layout_width="168dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:lineSpacingExtra="7sp"
+                    android:text="Choose from calendar"
+                    android:textAppearance="@style/rooms" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <!-- Button -->
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/button"
+            android:layout_width="339dp"
+            android:layout_height="57dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="795dp"
+            android:layout_marginLeft="39dp"
+            >
+            <!-- Reserve Now -->
+            <Button
+                android:id="@+id/reserve_now"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal|center_vertical"
+                android:lineSpacingExtra="0sp"
+                android:text="Apply"
+                android:textAppearance="@style/reserve_now"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <!-- Last Searched -->
+
+        <!-- Clear all -->
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="366dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/shap_search"
+            android:queryHint="Search... "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.appcompat.widget.SearchView>
+
+        <TextView
+            android:id="@+id/last_search"
+            android:layout_width="164dp"
+            android:layout_height="28dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:text="Last Searched"
+            android:textAppearance="@style/last_search"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/clear_all"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+        <TextView
+            android:id="@+id/clear_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:gravity="top"
+            android:text="Clear all"
+            android:textAppearance="@style/clear_all"
+            app:layout_constraintBottom_toBottomOf="@+id/last_search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/last_search"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="5dp"
+            app:itemCount="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/last_search"
+            tools:ignore="MissingConstraints"
+            tools:listitem="@layout/item_best_deals"></androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/no_search_results_found_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="228dp"
+            android:text="@string/no_search_results_found"
+            android:textAppearance="?attr/textAppearanceHeadline4"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/recyclerviewSearch"
+            app:layout_constraintVertical_bias="0.288" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/white"-->
+<!--    android:fillViewport="true">-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <androidx.appcompat.widget.SearchView-->
+<!--            android:id="@+id/searchView"-->
+<!--            android:layout_width="366dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:background="@drawable/shap_search"-->
+<!--            android:queryHint="Search... "-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        </androidx.appcompat.widget.SearchView>-->
+
+<!--        <ListView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_marginTop="28dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/searchView">-->
+<!--        </ListView>-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+<!--    &lt;!&ndash; Clear all notifications &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/clear_all_n"-->
+<!--        android:layout_width="146dp"-->
+<!--        android:layout_height="19dp"-->
+<!--        android:layout_marginLeft="233dp"-->
+<!--        android:layout_marginTop="33dp"-->
+<!--        android:gravity="top"-->
+<!--        android:text="Clear all notifications"-->
+<!--        android:textAppearance="@style/clear_all_n" />-->
+
+<!--    &lt;!&ndash; Notification 1 &ndash;&gt;-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/notificatio"-->
+<!--        android:layout_width="347dp"-->
+<!--        android:layout_height="130dp"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginLeft="32dp"-->
+<!--        android:layout_marginTop="64dp"-->
+<!--        android:background="@drawable/italy">-->
+
+
+<!--        &lt;!&ndash; Title &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/title"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentTop="false"-->
+<!--            android:layout_marginLeft="176dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:gravity="top"-->
+<!--            android:lineSpacingExtra="0sp"-->
+<!--            android:text="Italia"-->
+<!--            android:textAppearance="@style/title"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        &lt;!&ndash; Body Text &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/body_text"-->
+<!--            android:layout_width="155.5dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginLeft="176dp"-->
+<!--            android:layout_marginTop="53dp"-->
+<!--            android:layout_marginRight="11.5dp"-->
+<!--            android:gravity="top"-->
+<!--            android:lineSpacingExtra="0sp"-->
+<!--            android:text="Discover new places and find new adventures. "-->
+<!--            android:textAppearance="@style/body_text2" />-->
+
+<!--        <View-->
+<!--            android:layout_width="55dp"-->
+<!--            android:layout_height="27dp"-->
+<!--            android:layout_marginLeft="276.5dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@drawable/price"></View>-->
+
+
+<!--    </RelativeLayout>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="356dp"-->
+<!--        android:layout_marginTop="58dp"-->
+<!--        android:background="@drawable/ellipse1"-->
+<!--        app:srcCompat="@drawable/x" />-->
+
+<!--</ScrollView>-->

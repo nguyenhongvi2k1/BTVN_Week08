@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <!-- Rectangle 4245 -->
+    <RelativeLayout
+        android:id="@+id/rectangle_4"
+        android:layout_width="match_parent"
+        android:layout_height="1500dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Base -->
+            <View
+                android:id="@+id/base"
+                android:layout_width="wrap_content"
+                android:layout_height="157dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/header_trip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/card_singapore2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/base"
+                tools:ignore="MissingConstraints"></FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/card_america2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+                tools:ignore="MissingConstraints">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/card_thailand2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
+                tools:ignore="MissingConstraints"></FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/card_italy2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout2"
+                tools:ignore="MissingConstraints"></FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/card_korea2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout5"
+                tools:ignore="MissingConstraints"></FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/card_shanghai2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout4"
+                tools:ignore="MissingConstraints"></FrameLayout>
+
+
+            <!-- You’re at the end of the page -->
+            <TextView
+                android:id="@+id/you_re_at_t"
+                android:layout_width="185dp"
+                android:layout_height="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="28dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="You're at the end of the page."
+                android:textAppearance="@style/you_re_at_t"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout6" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/ellipse_3"-->
+<!--        android:layout_width="45dp"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginLeft="25dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:background="@drawable/ellipse_3">-->
+
+<!--        &lt;!&ndash; Città Avatar and Backdrop &ndash;&gt;-->
+<!--        <View-->
+<!--            android:id="@+id/citt_avatar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="39dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:background="@drawable/citt_avatar" />-->
+<!--    </RelativeLayout>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/search_field"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginLeft="87dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:background="@drawable/search_outline"-->
+<!--        android:drawableLeft="@drawable/search_icon"-->
+<!--        android:drawablePadding="8dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Search Here..."-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:paddingLeft="15dp"-->
+<!--        android:paddingTop="10dp"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:textColor="#99999999"-->
+<!--        android:textSize="18sp" />-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginLeft="0dp"-->
+<!--        android:layout_marginTop="106dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="34dp"-->
+<!--            android:layout_marginRight="34dp">-->
+
+<!--            &lt;!&ndash; Singapore &ndash;&gt;-->
+<!--            <View-->
+<!--                android:id="@+id/singapore"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="165dp"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:background="@drawable/card_singapore1" />-->
+<!--            &lt;!&ndash; Trip to Singapore &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/trip_to_sin"-->
+<!--                android:layout_width="253dp"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginLeft="45dp"-->
+<!--                android:layout_marginTop="66dp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:text="Trip to Singapore"-->
+<!--                android:textAppearance="@style/trip_to_sin"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            &lt;!&ndash; America &ndash;&gt;-->
+<!--            <View-->
+<!--                android:id="@+id/america"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="165dp"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginTop="188dp"-->
+<!--                android:background="@drawable/card_america1" />-->
+<!--            &lt;!&ndash; Trip to America &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/trip_to_ame"-->
+<!--                android:layout_width="226dp"-->
+<!--                android:layout_height="45dp"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginLeft="59dp"-->
+<!--                android:layout_marginTop="254dp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:text="Trip to America"-->
+<!--                android:textAppearance="@style/trip_to_ame"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            &lt;!&ndash; Italy &ndash;&gt;-->
+<!--            <View-->
+<!--                android:id="@+id/italy"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="165dp"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginTop="376dp"-->
+<!--                android:background="@drawable/card_italy" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/trip_to_ita"-->
+<!--                android:layout_width="165dp"-->
+<!--                android:layout_height="34dp"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginLeft="89dp"-->
+<!--                android:layout_marginTop="442dp"-->
+<!--                android:gravity="center_horizontal|bottom"-->
+<!--                android:text="Trip to Italy"-->
+<!--                android:textAppearance="@style/trip_to_ame"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            &lt;!&ndash; Thailand &ndash;&gt;-->
+<!--            <View-->
+<!--                android:id="@+id/thailand"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="165dp"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginTop="563dp"-->
+<!--                android:background="@drawable/card_thailand" />-->
+
+<!--            &lt;!&ndash; Trip to Thailand &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/trip_to_tha"-->
+<!--                android:layout_width="226dp"-->
+<!--                android:layout_height="34dp"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginLeft="49dp"-->
+<!--                android:layout_marginTop="629dp"-->
+<!--                android:gravity="center_horizontal|bottom"-->
+<!--                android:text="Trip to ThaiLand"-->
+<!--                android:textAppearance="@style/trip_to_ame"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            &lt;!&ndash; Shanghai &ndash;&gt;-->
+<!--            <View-->
+<!--                android:id="@+id/shanghai"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="165dp"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginTop="751dp"-->
+<!--                android:background="@drawable/card_shanghai" />-->
+
+<!--            &lt;!&ndash; Trip to Shanghai &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/trip_to_sha"-->
+<!--                android:layout_width="242dp"-->
+<!--                android:layout_height="34dp"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginLeft="51dp"-->
+<!--                android:layout_marginTop="817dp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:text="Trip to Shanghai"-->
+<!--                android:textAppearance="@style/trip_to_ame"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            &lt;!&ndash; Korea &ndash;&gt;-->
+<!--            <View-->
+<!--                android:id="@+id/korea"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="165dp"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginTop="939dp"-->
+<!--                android:background="@drawable/card_korea" />-->
+
+<!--            &lt;!&ndash; Trip to Korea &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/trip_to_kor"-->
+<!--                android:layout_width="185dp"-->
+<!--                android:layout_height="34dp"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginLeft="79dp"-->
+<!--                android:layout_marginTop="1005dp"-->
+<!--                android:gravity="center_horizontal|bottom"-->
+<!--                android:text="Trip to Korea"-->
+<!--                android:textAppearance="@style/trip_to_ame"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            &lt;!&ndash; You’re at the end of the page &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/you_re_at_t"-->
+<!--                android:layout_width="185dp"-->
+<!--                android:layout_height="16dp"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginLeft="86dp"-->
+<!--                android:layout_marginTop="1149dp"-->
+<!--                android:layout_marginBottom="40dp"-->
+<!--                android:gravity="center_horizontal|center_vertical"-->
+<!--                android:text="You're at the end of the page."-->
+<!--                android:textAppearance="@style/you_re_at_t" />-->
+
+<!--            &lt;!&ndash;-->
+<!--              Font family: Montserrat-->
+<!--              Line height: 16sp-->
+<!--              (identical to box height)-->
+<!--            &ndash;&gt;-->
+<!--            &lt;!&ndash; styles.xml &ndash;&gt;-->
+<!--        </RelativeLayout>-->
+
+<!--    </ScrollView>-->
+
+<!--</RelativeLayout>-->
+

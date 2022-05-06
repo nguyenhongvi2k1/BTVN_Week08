@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:fillViewport="true"
+    >
+    <!-- Base -->
+
+
+    <View
+        android:id="@+id/base"
+        android:layout_width="wrap_content"
+        android:layout_height="157dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_trip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="168dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/base"
+        tools:listitem="@layout/item_favorite"></androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"></ScrollView>-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/navigation_"-->
+<!--        android:layout_width="364dp"-->
+<!--        android:layout_height="307dp"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_marginLeft="19dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginTop="52dp"-->
+<!--        android:background="#00000000">-->
+<!--        &lt;!&ndash; Best Deal 1 &ndash;&gt;-->
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/best_deal_1"-->
+<!--            android:layout_width="364dp"-->
+<!--            android:layout_height="142dp"-->
+<!--            android:background="#00000000">-->
+
+<!--            &lt;!&ndash; Rectangle 15 &ndash;&gt;-->
+<!--            <View-->
+<!--                android:id="@+id/img_best1"-->
+<!--                android:layout_width="160dp"-->
+<!--                android:layout_height="135dp"-->
+<!--                android:layout_marginTop="19dp"-->
+<!--                android:background="@drawable/ic_rectangle_best_1"-->
+<!--                android:elevation="4dp" />-->
+<!--            &lt;!&ndash; Discount Banner &ndash;&gt;-->
+<!--            <View-->
+<!--                android:id="@+id/discount_best1"-->
+<!--                android:layout_width="70.64dp"-->
+<!--                android:layout_height="19dp"-->
+<!--                android:background="@drawable/discount_banner" />-->
+<!--            &lt;!&ndash; Text Container &ndash;&gt;-->
+<!--            <View-->
+<!--                android:id="@+id/text_contai_best1"-->
+<!--                android:layout_width="215.03dp"-->
+<!--                android:layout_height="116dp"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_marginLeft="171dp"-->
+<!--                android:layout_marginTop="19dp"-->
+<!--                android:background="@drawable/text_container_best1" />-->
+<!--        </RelativeLayout>-->
+<!--        &lt;!&ndash; Best Deal 2 &ndash;&gt;-->
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/best_deal_2"-->
+<!--            android:layout_width="364dp"-->
+<!--            android:layout_height="142dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_marginTop="160dp"-->
+<!--            android:background="#00000000">-->
+<!--            &lt;!&ndash; Rectangle 15 &ndash;&gt;-->
+<!--            <View-->
+<!--                android:id="@+id/img_best2"-->
+<!--                android:layout_width="160dp"-->
+<!--                android:layout_height="135dp"-->
+<!--                android:layout_marginTop="19dp"-->
+<!--                android:background="@drawable/ic_rectangle_best_2"-->
+<!--                android:elevation="4dp" />-->
+<!--            &lt;!&ndash; Discount Banner &ndash;&gt;-->
+<!--            <View-->
+<!--                android:id="@+id/discount_best2"-->
+<!--                android:layout_width="70.64dp"-->
+<!--                android:layout_height="19dp"-->
+<!--                android:background="@drawable/discount_banner" />-->
+<!--            &lt;!&ndash; Text Container &ndash;&gt;-->
+<!--            <View-->
+<!--                android:id="@+id/text_contai_best2"-->
+<!--                android:layout_width="215.03dp"-->
+<!--                android:layout_height="116dp"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_marginLeft="171dp"-->
+<!--                android:layout_marginTop="19dp"-->
+<!--                android:background="@drawable/text_container_best2" />-->
+<!--        </RelativeLayout>-->
+<!--    </RelativeLayout>-->
+
+<!--</RelativeLayout>-->
+

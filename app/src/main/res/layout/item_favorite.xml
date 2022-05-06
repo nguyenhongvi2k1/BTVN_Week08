@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/idIVImage"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/card1"
+            android:padding="5dp" />
+
+        <RelativeLayout
+            android:layout_width="229dp"
+            android:layout_height="128dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@+id/idIVImage">
+
+            <TextView
+                android:id="@+id/idTVTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="3dp"
+                android:text="@string/intercontin"
+                android:textAppearance="@style/intercontin"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idTVLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idTVTitle"
+                android:layout_alignStart="@+id/idTVTitle"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="3dp"
+                android:drawablePadding="2dp"
+                android:text="@string/wilshire_bl"
+                android:textAppearance="@style/wilshire_bl"
+                app:drawableStartCompat="@drawable/location" />
+
+            <TextView
+                android:id="@+id/idTVRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idTVLocation"
+                android:layout_alignStart="@+id/idTVTitle"
+                android:layout_marginStart="-1dp"
+                android:layout_marginTop="3dp"
+                android:drawablePadding="2dp"
+                android:text="@string/star_hotel"
+                android:textAppearance="@style/star_hotel"
+                app:drawableStartCompat="@drawable/star_icon" />
+
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="64.4dp"
+                android:layout_height="10dp"
+                android:layout_below="@+id/idTVRating"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/star4" />
+
+            <ImageView
+                android:id="@+id/ic_star"
+                android:layout_width="77dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/idTVRating"
+                android:layout_alignStart="@+id/idTVTitle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="262dp"
+                android:layout_marginBottom="61dp"
+                android:background="@drawable/star4"
+                android:drawablePadding="2dp"
+                android:text="@string/star_hotel"
+                android:textAppearance="@style/star_hotel"
+                app:drawableStartCompat="@drawable/star_icon" />
+
+            <TextView
+                android:id="@+id/per_night"
+                android:layout_width="202dp"
+                android:layout_height="15dp"
+                android:layout_below="@+id/new_price"
+                android:layout_alignStart="@+id/new_price"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="8dp"
+                android:drawablePadding="2dp"
+                android:text="@string/per_night"
+                android:textAppearance="@style/per_night" />
+
+
+            <ImageView
+                android:id="@+id/old_price"
+                android:layout_width="36.36dp"
+                android:layout_height="12dp"
+                android:layout_below="@+id/idTVRating"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="123dp"
+                android:layout_marginLeft="123dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/first_price" />
+
+            <TextView
+                android:id="@+id/new_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idTVRating"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="165dp"
+                android:layout_marginLeft="165dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:gravity="top"
+                android:text="$ 559"
+                android:textAppearance="@style/some_id"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <!-- To display item price -->
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/price"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@+id/idTVCourseRating"-->
+        <!--            android:layout_alignStart="@+id/idTVCourseRating"-->
+        <!--            android:layout_marginStart="220dp"-->
+        <!--            android:layout_marginTop="28dp"-->
+        <!--            android:drawablePadding="2dp"-->
+        <!--            android:text="$ 559"-->
+        <!--            android:textAppearance="@style/some_id"-->
+        <!--            android:textStyle="bold" />-->
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.btvn_week08_lt">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BTVN_Week08_LT">
+        <activity
+            android:name=".Activity.ActivityPaymentDetail"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ActivityPayment"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ActivityPaymentSuccessfull"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ActivityPaymentFailed"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.TripToAmericaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.FIlterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ActivityTripToItaly"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.MyProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.activity_introduction1"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.activity_introduction2"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.activity_getstarted"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.activity_home"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.PopularDestinationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.HotelActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Hotel_Gallery"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.Hotel_Detail"
+            android:exported="true" />
+    </application>
+
+</manifest>

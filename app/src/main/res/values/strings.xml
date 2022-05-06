@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">BTVN_Week08_LT</string>
+    <string name="text_introduction1">Find best deals</string>
+    <string name="body_text_introduction1">Explore and find the suitable room for the perfect travels</string>
+    <string name="text_introduction2">Get Amazing Tips</string>
+    <string name="body_text_introduction2">Trip advices make your trip more enjoyable and cost-effective</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="get_started">Get Started</string>
+    <string name="create_one">Create one</string>
+    <string name="you_haven_t">You have not got an account?</string>
+    <string name="get_new">Get new</string>
+    <string name="forgot_pass">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="password">Password</string>
+    <string name="email_phone">Email</string>
+    <string name="the_mail_or">The mail or password you entered is wrong</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="register">Register</string>
+    <string name="sign_in">Sign In</string>
+    <string name="already_hav">Already have an account?</string>
+    <string name="enter_your_passagain">Enter your password again</string>
+    <string name="enter_your_passnew">Enter your password</string>
+    <string name="last_name">Last name</string>
+    <string name="first_name">First name</string>
+    <string name="enter_your_number">Enter your email</string>
+    <string name="singapore">Singapore</string>
+    <string name="america">America</string>
+    <string name="italia">Italia</string>
+    <string name="off_30">30% OFF</string>
+    <string name="off_20">20% OFF</string>
+    <string name="intercontin">InterContinental Los Angeles</string>
+    <string name="wilshire_bl">900 Wilshire Blvd, Los Angeles, CA 90017, USA</string>
+    <string name="star_hotel">4-star Hotel</string>
+    <string name="first_price">$ 799</string>
+    <string name="discount_price">$ 559 </string>
+    <string name="per_night">Per Night</string>
+    <string name="sofitel_sin">Sofitel Singapore City Centre</string>
+    <string name="wallich_st_">9 Wallich St, Singapore 078885</string>
+    <string name="body_text">
+        Sorry... We haven\u00E2\u0080\u0099t found any result for your search! Please try again</string>
+
+    <string name="my_profile">My Profile</string>
+    <string name="settings">Settings </string>
+    <string name="payment_met">Payment Methods</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="helps_faqs">Helps FAQs</string>
+    <string name="offers_and_">Offers and Promo</string>
+    <string name="my_events">My Events</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="go_to_explo">Go to Explore</string>
+    <string name="profile">Profile</string>
+    <string name="address">Address</string>
+    <string name="best_deals">Best Deals</string>
+    <string name="popular_des">Popular Destination</string>
+    <string name="michelle_ng">Michelle Ng.</string>
+    <!-- strings.xml -->
+    <string name="a_coastal_a">
+
+A coastal area within Liguria, in the northwest of Italy. It lies in the west of La Spezia Province, and the coastline, the five villages, and the surrounding hillsides are all part of the Cinque Terre National Park, a UNESCO World Heritage Site.
+</string>
+
+    <!-- strings.xml -->
+    <string name="where_are_y">
+
+    Where are you\ngoing next?
+    </string>
+    <!-- strings.xml -->
+    <string name="please_ente">
+
+Please enter your phone number to request an OTP for password reset
+</string>
+    <!-- strings.xml -->
+    <string name="we_ve_send_">
+
+Enter one time password sent on +840000000000
+</string>
+    <!-- strings.xml -->
+    <string name="i_haven_t_r">
+
+I haven\u00E2\u0080\u0099t receive an OTP...
+</string>
+    <string name="no_search_results_found">No Results Found</string>
+
+
+    <!-- strings.xml -->
+    <string name="there_is_no">
+
+There is no hotel in this page
+</string>
+    <string name="some_id_559">$ 599 - $ 899</string>
+    <string name="hotel_detai">Hotel details</string>
+    <string name="boasting_an">Boasting an outdoor pool, InterContinental - Los Angeles Downtown is located in the Downtown Los Angeles district of Los Angeles. The property has an on-site restaurant and free WiFi throughout. An American breakfast is available every morning at the property ...
+</string>
+    <string name="most_popula">Most popular facilities</string>
+    <string name="bathtub">Bathtub</string>
+    <string name="pet_friendl">Pet Friendly </string>
+    <string name="multiple_la">Non-smoking Room</string>
+    <string name="tea_coffee_">Tea/Coffee maker in All rooms</string>
+    <string name="the_rooms_a">The rooms are very nice. The king bed is soft plus a soft blanket makes sleeping very comfortable
+</string>
+    <string name="i_m_very_ha">I\'m very happy with the view that can be seen from the inside of the hotel
+</string>
+    <string name="the_service">The service is nice but it takes me too long to checkin</string>
+    <string name="very_satisf">Very satisfied</string>
+    <string name="not_good_en">Not good enough for me</string>
+
+
+</resources>

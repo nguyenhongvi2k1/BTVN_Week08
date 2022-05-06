@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_loca"
+        android:title="Explore"
+        android:icon="@drawable/explore_selector">
+    </item>
+
+    <item android:id="@+id/nav_trips"
+        android:title="Trips"
+        android:icon="@drawable/trips_selector">
+    </item>
+
+    <item android:id="@+id/nav_favo"
+        android:title="Favorite"
+        android:icon="@drawable/favorite_selector">
+    </item>
+
+    <item android:id="@+id/nav_search"
+        android:title="Search"
+        android:icon="@drawable/search_selector">
+    </item>
+
+    <item android:id="@+id/nav_usr"
+        android:title="Account"
+        android:icon="@drawable/account_selector">
+    </item>
+</menu>

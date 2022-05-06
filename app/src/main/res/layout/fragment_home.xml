@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:fillViewport="true"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1335dp"
+        tools:ignore="MissingConstraints">
+
+        <!-- Rectangle 4245 -->
+        <RelativeLayout
+            android:id="@+id/rectangle_4"
+            android:layout_width="match_parent"
+            android:layout_height="1335dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="1209dp"
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+
+                <!-- Nomads Search -->
+                <TextView
+                    android:id="@+id/where_are_y"
+                    android:layout_width="213dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="top"
+
+                    android:paddingLeft="5dp"
+                    android:text="@string/where_are_y"
+                    android:textAppearance="@style/where_are_y"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <View
+                    android:id="@+id/nomads_sear"
+                    android:layout_width="88dp"
+                    android:layout_height="87dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/nomads_search"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/where_are_y"
+                    app:layout_constraintTop_toTopOf="@+id/where_are_y" />
+
+                <TextView
+                    android:id="@+id/textViewDes"
+                    android:layout_width="247dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="top"
+                    android:text="@string/popular_des"
+                    android:textAppearance="@style/popular_des"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/where_are_y"
+                    app:layout_constraintTop_toBottomOf="@+id/where_are_y" />
+
+
+                                <HorizontalScrollView
+                                    android:id="@+id/horizontalScrollView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginStart="20dp"
+                                    android:layout_marginTop="12dp"
+                                    android:layout_marginEnd="20dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="@+id/where_are_y"
+                                    app:layout_constraintTop_toBottomOf="@+id/textViewDes">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginRight="10dp">
+
+                                        <androidx.constraintlayout.widget.ConstraintLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content">
+
+                                            <View
+                                                android:id="@+id/card_singap"
+                                                android:layout_width="166dp"
+                                                android:layout_height="211dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentTop="true"
+                                                android:background="@drawable/singapore"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent"
+                                                app:layout_constraintVertical_bias="0.0" />
+
+                                            <ImageView
+                                                android:id="@+id/card_americ"
+                                                android:layout_width="165dp"
+                                                android:layout_height="211dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_marginStart="28dp"
+                                                android:background="@drawable/america"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                app:layout_constraintStart_toEndOf="@+id/card_singap"
+                                                app:layout_constraintTop_toTopOf="parent"
+                                                app:layout_constraintVertical_bias="0.0" />
+
+
+                                            <ImageView
+                                                android:id="@+id/card_italia"
+                                                android:layout_width="165dp"
+                                                android:layout_height="211dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_marginStart="28dp"
+                                                android:background="@drawable/card_italy"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintHorizontal_bias="1.0"
+                                                app:layout_constraintStart_toEndOf="@+id/card_americ"
+                                                app:layout_constraintTop_toTopOf="parent"
+                                                app:layout_constraintVertical_bias="0.0" />
+                                            <!-- Italia -->
+                                            <TextView
+                                                android:id="@+id/italia"
+                                                android:layout_width="57dp"
+                                                android:layout_height="33dp"
+                                                android:layout_alignParentLeft="true"
+                                                android:layout_alignParentTop="true"
+                                                android:gravity="top"
+                                                android:text="@string/italia"
+                                                android:textAppearance="@style/pri_style"
+                                                android:textStyle="bold"
+                                                app:layout_constraintBottom_toBottomOf="parent"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintHorizontal_bias="0.185"
+                                                app:layout_constraintStart_toStartOf="@+id/card_italia"
+                                                app:layout_constraintTop_toTopOf="parent"
+                                                app:layout_constraintVertical_bias="0.96" />
+                                        </androidx.constraintlayout.widget.ConstraintLayout>
+                                    </RelativeLayout>
+                                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/my_pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="410dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <!--                        <com.google.android.material.tabs.TabLayout-->
+                        <!--                            android:id="@+id/my_tablayout"-->
+                        <!--                            android:layout_width="100dp"-->
+                        <!--                            app:tabPaddingStart="100dp"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            app:tabBackground="@drawable/tab_selector"-->
+                        <!--                            app:tabGravity="center"-->
+                        <!--                            app:tabIndicatorHeight="0dp">-->
+                        <!--                        </com.google.android.material.tabs.TabLayout>-->
+
+                    </androidx.viewpager.widget.ViewPager>
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/my_tablayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/my_pager"
+                        app:tabBackground="@drawable/tab_selector"
+                        app:tabGravity="center"
+                        app:tabIndicatorHeight="0dp"></com.google.android.material.tabs.TabLayout>
+
+                </LinearLayout>
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/imageView2"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:background="@drawable/cinqueterre_text"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintHorizontal_bias="1.0"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toTopOf="parent"-->
+                <!--                    tools:ignore="MissingConstraints" />-->
+
+                <!-- Best Deals -->
+
+                                <TextView
+                                    android:id="@+id/best_deals"
+                                    android:layout_width="131dp"
+                                    android:layout_height="29.23dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_marginTop="16dp"
+                                    android:gravity="top"
+                                    android:text="@string/best_deals"
+                                    android:textAppearance="@style/best_deals"
+                                    android:textStyle="bold"
+                                    app:layout_constraintStart_toStartOf="@+id/where_are_y"
+                                    app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+                                    tools:ignore="NotSibling" />
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/deals_recyclerView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="362dp"
+                                    android:layout_marginTop="4dp"
+                                    android:orientation="vertical"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/best_deals"></androidx.recyclerview.widget.RecyclerView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

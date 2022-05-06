@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Image -->
+    <RelativeLayout
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/icon_hotel_introduction"
+        android:clipToOutline="true">
+        <!-- chevron-left -->
+        <View xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/btn_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/ic_back"
+            android:clipToOutline="true" />
+        <!-- Rectangle 38 -->
+        <View
+            android:id="@+id/rectangle_38"
+            android:layout_width="355dp"
+            android:layout_height="240dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="399dp"
+            android:background="@drawable/rectangle_38" />
+        <!-- Hotel Introduction -->
+        <RelativeLayout
+            android:id="@+id/hotel_intro"
+            android:layout_width="355dp"
+            android:layout_height="240dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="399dp"
+            android:background="#00000000">
+            <!-- Header -->
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="340dp"
+                android:layout_height="87dp"
+                android:background="#00000000">
+                <!-- Price -->
+                <RelativeLayout
+                    android:id="@+id/price"
+                    android:layout_width="129dp"
+                    android:layout_height="42dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="40dp"
+                    android:background="#00000000">
+                    <!-- Per Night -->
+                    <TextView
+                        android:id="@+id/per_night"
+                        android:layout_width="56.16dp"
+                        android:layout_height="14.84dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="27dp"
+                        android:gravity="top"
+                        android:text="@string/per_night"
+                        android:textAppearance="@style/per_night"
+                        android:textColor="#FFFFFFFF" />
+                    <!-- $ 559 -->
+                    <TextView
+                        android:id="@+id/some_id"
+                        android:layout_width="209dp"
+                        android:layout_height="27dp"
+                        android:gravity="top"
+                        android:text="@string/some_id_559"
+                        android:textAppearance="@style/some_id_559" />
+                </RelativeLayout>
+                <!-- InterContinental Los Angeles -->
+                <TextView
+                    android:id="@+id/intercontin"
+                    android:layout_width="255.72dp"
+                    android:layout_height="73.2dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="top"
+                    android:text="@string/intercontin"
+                    android:textAppearance="@style/intercontin_white"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <!-- Hotel Information -->
+            <RelativeLayout
+                android:id="@+id/hotel_infor"
+                android:layout_width="215.64dp"
+                android:layout_height="39dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="100dp"
+                android:background="#00000000">
+                <!-- location-sign 1 -->
+                <View xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/location_si"
+                    android:layout_width="10.42dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/location"
+                    android:clipToOutline="true" />
+                <!-- 900 Wilshire Blvd, Los Angeles, CA 90017, USA -->
+                <TextView
+                    android:id="@+id/wilshire_bl"
+                    android:layout_width="202.09dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="top"
+                    android:text="@string/wilshire_bl"
+                    android:textAppearance="@style/wilshire_bl_while" />
+                <!-- Solid/Status/Award -->
+                <View xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/solid_statu"
+                    android:layout_width="12.5dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/ic_award" />
+                <!-- 4-star Hotel -->
+                <TextView
+                    android:id="@+id/star_hotel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="top"
+                    android:text="@string/star_hotel"
+                    android:textAppearance="@style/star_hotel"
+                    android:textColor="#FFFFFFFF" />
+
+                <!-- star -->
+                <View
+                    android:id="@+id/star"
+                    android:layout_width="64.59dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/ic_star" />
+
+            </RelativeLayout>
+            <!-- Button -->
+            <!--            <RelativeLayout-->
+            <!--                android:id="@+id/btn_reserver"-->
+            <!--                android:layout_width="306.86dp"-->
+            <!--                android:layout_height="40dp"-->
+            <!--                android:layout_alignParentLeft="true"-->
+            <!--                android:layout_alignParentTop="true"-->
+            <!--                android:layout_marginLeft="24dp"-->
+            <!--                android:layout_marginTop="160dp"-->
+            <!--                android:background="#00000000">-->
+            <!-- Rectangle 37 -->
+            <!--                <Button-->
+            <!--                    android:id="@+id/btn_reserver_room"-->
+            <!--                    android:layout_width="306.86dp"-->
+            <!--                    android:layout_height="40dp"-->
+            <!--                    android:layout_centerInParent="true"-->
+            <!--                    android:background="@drawable/rectangle_37"-->
+            <!--                    android:gravity="center_horizontal|center_vertical"-->
+            <!--                    android:text="Reserve Room"-->
+            <!--                    android:textAppearance="@style/login"-->
+            <!--                    android:textSize="24dp"-->
+            <!--                    android:textStyle="bold"/>-->
+
+            <Button
+                android:id="@+id/btn_reserver_room"
+                android:layout_width="339dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="160dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/shape"
+                android:gravity="center_horizontal"
+                android:text="Reserve Room"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.333" />
+
+            <!--            </RelativeLayout>-->
+            <!-- Show More -->
+            <RelativeLayout
+                android:id="@+id/show_more"
+                android:layout_width="82dp"
+                android:layout_height="17dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="214dp"
+                android:background="#00000000">
+                <!-- Show More -->
+                <TextView
+                    android:id="@+id/text_show_more"
+                    android:layout_width="66dp"
+                    android:layout_height="15dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Show more"
+                    android:textAppearance="@style/show_more" />
+
+                <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/chevron_dow"
+                    android:layout_width="17dp"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="65dp"
+                    android:background="@drawable/chevron_down"
+                    android:clipToOutline="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
